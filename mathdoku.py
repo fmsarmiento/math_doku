@@ -73,6 +73,14 @@ def sudokuAnalysis():
         with open(f"results{row_tries}_{i+1}.csv","w") as f:
             for x in results: f.write(f"{x}\n")
 
+def setDifficulty(difficulty):
+    if difficulty == "easy":
+        pass
+    elif difficulty == "medium":
+        pass
+    elif difficulty == "hard":
+        pass
+
 def threadedSolver(board, n):
     '''Tries to solve sudoku with n threads.'''
     global found
